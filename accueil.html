@@ -8,6 +8,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/navigbar.css">
 	<link rel="stylesheet" type="text/css" href="css/blocgauche.css">
+	<link rel="stylesheet" type="text/css" href="css/fonticons/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonticons/css/font-awesome.css">
 </head>
 <body>
 	
@@ -23,16 +25,35 @@
 	  <li style="float:right"><a class="active" href="about.html">About</a></li>
 	</ul>
 	</div>
+<!-- Insérer une Photo  -->
+ 	
+ 	<div class="container-fluid" style="margin-top: 15px;">
+ 		<div class="row">		
+ 			<div class="col-sm-2" style="text-align: center">
+ 				<img src="sary/profile.png" style="height:150px;width:150px;">
+			</div>
+			<div class="col-sm-10">
+				<form>
+					<label><h4>SUMMARY</h4></label><br>
+					<textarea rows="4" cols="167" style=""></textarea>
+				</form>
+			</div>
+		</div>	
+ 	<hr></div>
+
 
 <!-- début du formulaire -->
 
 	<div class="container-fluid">
 		<div class="row">
 
+
 <!-- volet gauche -->
+		
+			
 			<div class="col-sm-4">
 				<div class="col-m-12">
-					<h4 style="text-align: center; margin-top: 15px">INFORMATIONS PERSONNELLES</h4>
+					<h4 style="margin-top: 15px; text-align: center"><span><i class="fa fa-user"></i>INFORMATIONS PERSONNELLES</span></h4>
 					<div class="titreh4">
 					<form>
 					    <label>Nom</label>
@@ -72,42 +93,89 @@
 					</div>
 				</div>
 				<div class="col-m-12">
-					<h4 style="text-align: center; margin-top: 15px">CONNAISSANCES LINGUISTIQUES</h4>
+					<h4 style="text-align: center; margin-top: 15px"><span><i class="fa fa-globe"></i>CONNAISSANCES LINGUISTIQUES</span></h4>
 					<div class="titreh4">
 					<form>
-					    <label>Français</label><br>
-							<div class="form-check-inline">
-							      <label class="form-check-label" for="radio1">
-							        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
-							      </label>
-							    </div>
-							    <div class="form-check-inline">
-							      <label class="form-check-label" for="radio2">
-							        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
-							      </label>
-							    </div>
-							    <div class="form-check-inline">
-							      <label class="form-check-label">
-							        <input type="radio" class="form-check-input" disabled>Option 3
-							      </label>
-							    </div>
-					    <label>Anglais</label>
-					    <select id="Niveau" name="">
-					      <option></option>
-					      <option>Passable</option>
-					      <option>Assez bien</option>
-					      <option>Bien</option>
-					      <option>Très bien</option>
-					    </select>
-					    <label>Autres</label>
-					    <input type="text" id="nom" name="" placeholder="(à préciser)"><br>
-					    <select id="Niveau" name="">
-					      <option></option>
-					      <option>Passable</option>
-					      <option>Assez bien</option>
-					      <option>Bien</option>
-					      <option>Très bien</option>
-					    </select>
+					  
+						<div class="card">
+						  <div class="card-body">
+						  	  <label>Français</label><br>
+						<div class="form-check-inline">
+							 <label class="form-check-label" for="radio1">
+							     <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">Passable
+							  </label>
+						</div>
+						<div class="form-check-inline">
+							  <label class="form-check-label" for="radio2">
+							      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Assez bien
+							   </label>
+						</div>
+						<div class="form-check-inline">
+							   <label class="form-check-label" for="radio3" >
+							      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Bien
+							   </label>
+						</div>
+						<div class="form-check-inline">
+							   <label class="form-check-label" for="radio4">
+							      <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">Très bien
+							   </label>
+						</div>
+						  </div>
+						</div>
+					    
+					    <div class="card">
+						  <div class="card-body">
+						  	  <label>Anglais</label><br>
+						<div class="form-check-inline">
+							 <label class="form-check-label" for="radio1">
+							     <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">Passable
+							  </label>
+						</div>
+						<div class="form-check-inline">
+							  <label class="form-check-label" for="radio2">
+							      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Assez bien
+							   </label>
+						</div>
+						<div class="form-check-inline">
+							   <label class="form-check-label" for="radio3" >
+							      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Bien
+							   </label>
+						</div>
+						<div class="form-check-inline">
+							   <label class="form-check-label" for="radio4">
+							      <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">Très bien
+							   </label>
+						</div>
+						  </div>
+						</div>
+
+						<div class="card">
+						  <div class="card-body">
+						  	  <label>Ajouter (+)</label><input type="text" name="Autres"><br>
+						<div class="form-check-inline">
+							 <label class="form-check-label" for="radio1">
+							     <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">Passable
+							  </label>
+						</div>
+						<div class="form-check-inline">
+							  <label class="form-check-label" for="radio2">
+							      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Assez bien
+							   </label>
+						</div>
+						<div class="form-check-inline">
+							   <label class="form-check-label" for="radio3" >
+							      <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Bien
+							   </label>
+						</div>
+						<div class="form-check-inline">
+							   <label class="form-check-label" for="radio4">
+							      <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">Très bien
+							   </label>
+						</div>
+						  </div>
+						</div>
+
+
 					</form>
 					</div>
 				</div>
@@ -116,7 +184,7 @@
 <!-- volet milieu -->
 			<div class="col-m-4">
 				<div class="col-m-12">
-					<h4 style="text-align: center; margin-top: 15px">FORMATIONS ET DIPLOMES</h4>
+					<h4 style="text-align: center; margin-top: 15px"><span><i class="fa fa-graduation-cap"></i>FORMATIONS ET DIPLOMES</span></h4>
 					<div class="titreh4">
 					<form>
 					    <label>Année</label>
@@ -138,7 +206,7 @@
 					</div>
 				</div>
 				<div class="col-m-12">
-					<h4 style="text-align: center; margin-top: 15px">STAGES ET EXPERIENCES PROFESSIONNELLES</h4>
+					<h4 style="text-align: center; margin-top: 15px"><span><i class="fa fa-suitcase"></i>EXPERIENCES PROFESSIONNELLES</span></h4>
 					<div class="titreh4">
 					<form>
 					    <label>Année et durée</label>
@@ -151,7 +219,7 @@
 					</div>
 				</div>
 				<div class="col-m-12">
-					<h4 style="text-align: center; margin-top: 15px">MOTIVATION</h4>
+					<h4 style="text-align: center; margin-top: 15px"><span><i class="fa fa-paperclip"></i>MOTIVATION</span></h4>
 					<div class="titreh4">
 					<form>
 					    <label>Rédigez vos motivations</label><br>
@@ -164,7 +232,7 @@
 <!-- volet droite -->
 			<div class="col-sm-4">
 				<div class="col-m-12">
-					<h4 style="text-align: center; margin-top: 15px">LOISIRS ET CENTRES D'INTERETS</h4>
+					<h4 style="text-align: center; margin-top: 15px"><span><i class="fa fa-tasks"></i>LOISIRS ET CENTRES D'INTERETS</span></h4>
 					<div class="titreh4">
 					<form>
 					    <label>Vos loisirs et centres d'intérêts</label>
@@ -173,7 +241,7 @@
 					</div>
 				</div>
 				<div class="col-m-12">
-					<h4 style="text-align: center; margin-top: 15px">REFERENCES PROFESSIONNELLES</h4>
+					<h4 style="text-align: center; margin-top: 15px"><span><i class="fa fa-address-book"></i>REFERENCES PROFESSIONNELLES</span></h4>
 					<div class="titreh4">
 					<form>
 					    <label>Vos références</label>
@@ -183,15 +251,15 @@
 				</div>
 				<div class="col-m-12"><!-- + rajout --></div>
 				<div class="col-m-12">
-					<h4 style="text-align: center; margin-top: 15px">COMPETENCES INFORMATIQUES</h4>
+					<h4 style="text-align: center; margin-top: 15px"><span><i class="fa fa-desktop"></i>COMPETENCES INFORMATIQUES</span></h4>
 					<div class="titreh4">
 					<form>
 					    <label>Bureautique</label>
-					    <input type="text" id="motivation" name="" placeholder="à citer.." style="height: 70px;"><br>
+					    <textarea rows="4" cols="57.5"></textarea><br>
 					    <label>Languages</label>
-					    <input type="text" id="motivation" name="" placeholder="à citer.." style="height: 70px;"><br>
+					    <textarea rows="4" cols="57.5"></textarea><br>
 					    <label>Autres logiciels</label>
-					    <input type="text" id="motivation" name="" placeholder="à citer.." style="height: 70px;"><br>
+					    <textarea rows="4" cols="57.5"></textarea><br>
 					</form>
 					</div>
 				</div>
